@@ -87,7 +87,7 @@ Notice, the `login` button is hidden and `logout` button is shown now.
 
 Open Android Studio logcat and notice the response on clicking "update" button.
 
-The update will send request to this endpoint in [StackExchangeApiService.kt](app/src/main/java/com/reputationoverflow/network/StackExchangeApiService.kt)
+The `update` button will send request to this endpoint in [StackExchangeApiService.kt](app/src/main/java/com/reputationoverflow/network/StackExchangeApiService.kt)
 
 ```kotlin 
 @GET("/me?order=desc&sort=reputation&site=stackoverflow")
