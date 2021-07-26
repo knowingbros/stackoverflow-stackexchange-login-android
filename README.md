@@ -63,7 +63,7 @@ Notice the resemblance in `host` and `scheme` here and the `redirect_uri` in ste
 
 ## 6 Run the app and click on login button
 
-Click on the login button in our app. On clicking login button, a browser will open and there would need to login to stackoverflow.
+Click on the login button in our app. On clicking login button, a browser will open and there you would need to login to stackoverflow.
 
 **example**
 
