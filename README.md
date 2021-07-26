@@ -58,7 +58,15 @@ You will see login screen
 
 ![](https://i.imgur.com/o9px0y5.jpg)
 
-## 8 Now on clicking update button in app, you will see the response from server.
+## 8 You will be redirected to app upon clicking "approve" on step 7
+
+Notice, the `login` button is hidden and `logout` button is shown now.
+
+**example**
+
+![](https://i.imgur.com/mnuOaF2.jpg)
+
+## 9 Now on clicking `update` button in app, you will see the response from server.
 
 You can modify endpoints and do whatever at this point.
 
