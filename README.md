@@ -1,6 +1,23 @@
-Stackoverflow login
+# Stackoverflow login - Android App
 
-Documentation: https://api.stackexchange.com/docs/authentication
+> Documentation: https://api.stackexchange.com/docs/authentication 
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [1 Create an app on stackapps](#1-create-an-app-on-stackapps)
+- [2 On successful app creation, you will get details](#2-on-successful-app-creation-you-will-get-details)
+- [3 In SessionUtil file, add relevant details](#3-in-sessionutil-file-add-relevant-details)
+- [4 Create secrets.properties in the root folder and add "key"](#4-create-secretsproperties-in-the-root-folder-and-add-key)
+- [5 In AndroidManifest.xml, add host and scheme](#5-in-androidmanifestxml-add-host-and-scheme)
+- [6 Run the app and click on login button](#6-run-the-app-and-click-on-login-button)
+- [7 Login to stackoverflow and then approve the app](#7-login-to-stackoverflow-and-then-approve-the-app)
+- [8 You will be redirected to app upon clicking "approve" on step 7](#8-you-will-be-redirected-to-app-upon-clicking-approve-on-step-7)
+- [9 Now on clicking `update` button in app, you will see the response from server in the Android Studio logcat.](#9-now-on-clicking-update-button-in-app-you-will-see-the-response-from-server-in-the-android-studio-logcat)
+- [10 Documentation](#10-documentation)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## 1 Create an app on stackapps
 
@@ -70,8 +87,26 @@ Notice, the `login` button is hidden and `logout` button is shown now.
 
 Open Android Studio logcat and notice the response on clicking "update" button.
 
+The update will send request to this endpoint in [StackExchangeApiService.kt](app/src/main/java/com/reputationoverflow/network/StackExchangeApiService.kt)
+
+```kotlin 
+@GET("/me?order=desc&sort=reputation&site=stackoverflow")
+suspend fun getMyReputation(): String
+```
+
+The Documentation for above endpoint is here: https://api.stackexchange.com/docs/me
+
 You can modify endpoints and do whatever at this point.
 
 **example**
 
 ![](https://i.imgur.com/nhdpXMw.png)
+
+## 10 Documentation
+
+Find more Documentation, API endpoints here: https://api.stackexchange.com/docs/
+
+**example**
+
+![](https://i.imgur.com/229OU79.png)
+
