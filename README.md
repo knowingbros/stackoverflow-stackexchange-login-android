@@ -46,7 +46,21 @@ Notice the resemblance in `host` and `scheme` here and the `redirect_uri` in ste
 
 ![](https://i.imgur.com/rl0tmXR.png)
 
-## 6 On clicking update button in app, you will see the response from server.
+## 6 Run the app and click on login button
+
+You will see login screen
+
+**example**
+
+![](https://i.imgur.com/LZiBQVv.jpg)
+
+## 7 Login to stackoverflow and then approve the app
+
+**example**
+
+![](https://i.imgur.com/o9px0y5.jpg)
+
+## 8 Now on clicking update button in app, you will see the response from server.
 
 You can modify endpoints and do whatever at this point.
 
