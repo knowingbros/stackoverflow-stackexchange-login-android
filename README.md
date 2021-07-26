@@ -66,7 +66,9 @@ Notice, the `login` button is hidden and `logout` button is shown now.
 
 ![](https://i.imgur.com/mnuOaF2.jpg)
 
-## 9 Now on clicking `update` button in app, you will see the response from server.
+## 9 Now on clicking `update` button in app, you will see the response from server in the Android Studio logcat.
+
+Open Android Studio logcat and notice the response on clicking "update" button.
 
 You can modify endpoints and do whatever at this point.
 
