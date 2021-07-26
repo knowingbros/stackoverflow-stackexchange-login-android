@@ -30,9 +30,7 @@ https://stackapps.com/apps/oauth/register
 
 STACK_EXCHANGE_KEY="YOUR_KEY_HERE"
 
-Remember to add key and not secret.
-
-**Note**: The key in the source code is invalid and you need to add your OWN key that you receive on step 2.
+Remember to add "key" and not secret.
 
 **example**
 
